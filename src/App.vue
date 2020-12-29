@@ -177,7 +177,7 @@
 						let line = subway[i][1]; //线路名称
 						let item = subway[i][3];
 						for (let j = 0; j < item.length; j = j + 2) {
-							siteMap.set(item[j], line)
+							siteMap.set(item[j], line)	//出现两次的环形线路也会被只记录一次
 						}
 					}
 
